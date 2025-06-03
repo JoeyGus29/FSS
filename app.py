@@ -1,7 +1,7 @@
 # app.py (Home/Signup/Login)
 
 import streamlit as st
-st.set_page_config(page_title="Home", page_icon="🏠")
+st.set_page_config(page_title="GridironIQ", page_icon="🏈")
 
 # rest of your login/signup or dashboard code...
 
