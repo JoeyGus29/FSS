@@ -11,8 +11,8 @@ tabs = st.tabs(["Log In or Sign Up", "WR Rankings", "RB Rankings", "TE Rankings"
 
 # Map each tab to its raw-CSV filename (must be in the same folder as app.py)
 csv_paths = {
-    "WR Rankings": "wr_fss_rankings_full.csv",
-    "RB Rankings": "rb_fss_rankings_full.csv",
+    "WR Rankings": "wr_fss_rankings.csv",
+    "RB Rankings": "rb_fss_rankings.csv",
     "TE Rankings": "te_fss_rankings.csv",
     "QB Rankings": "qb_fss_rankings.csv"
 }
@@ -43,7 +43,7 @@ def load_and_rescale(csv_file):
     df["Scaled_FSS"] = df["Scaled_FSS"].round(1)
     return df
 
-for i, pos in enumerate(["WR", "RB", "QB", "TE"]):
+for i, pos in enumerate(["WR Rankings", "RB Rankings", "QB Rankings", "TE Rankings"]):
     with tabs[i]:
         st.subheader(f"Rescaled FSS Rankings – {pos}")
 
