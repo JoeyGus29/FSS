@@ -4,7 +4,8 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Fantasy Success Score Dashboard", layout="wide")
 
-st.title("🏈 Fantasy Success Score (FSS) Dashboard")
+st.title("🏈 GridironIQ
+Fantasy Success Score (FSS) Dashboard")
 tabs = st.tabs(["WR", "RB", "QB", "TE"])
 
 # Load precomputed charts for WR, RB, QB, TE
