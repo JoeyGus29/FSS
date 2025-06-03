@@ -7,14 +7,14 @@ import matplotlib.pyplot as plt
 st.set_page_config(page_title="Fantasy Success Score Dashboard", layout="wide")
 st.title("🏈 GridironIQ\nFantasy Success Score (FSS) Dashboard")
 
-tabs = st.tabs(["Log In or Sign Up", "WR Rankings", "RB Rankings", "TE Rankings", "QB Rankings", "About Us / Contact Us", "Terms of Use & Privacy Policy", ])
+tabs = st.tabs(["Log In or Sign Up", "WR Rankings", "RB Rankings", "TE Rankings", "QB Rankings", "About Us / Contact Us", "Terms of Use & Privacy Policy"])
 
 # Map each tab to its raw-CSV filename (must be in the same folder as app.py)
 csv_paths = {
-    "WR": "wr_fss_rankings_full.csv",
-    "RB": "rb_fss_rankings_full.csv",
-    "QB": "qb_fss_rankings.csv",
-    "TE": "te_fss_rankings.csv"
+    "WR Rankings": "wr_fss_rankings_full.csv",
+    "RB Rankings": "rb_fss_rankings_full.csv",
+    "TE Rankings": "te_fss_rankings.csv",
+    "QB Rankings": "qb_fss_rankings.csv"
 }
 
 def load_and_rescale(csv_file):
@@ -91,7 +91,6 @@ for i, pos in enumerate(["WR", "RB", "QB", "TE"]):
 
         except FileNotFoundError:
             st.warning(f"Could not find `{csv_file}`. Upload the CSV to this folder and refresh.")
-
 
         st.markdown("---")
         st.subheader("Compare Two Players")
