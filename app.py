@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 st.set_page_config(page_title="Fantasy Success Score Dashboard", layout="wide")
 st.title("🏈 GridironIQ\nFantasy Success Score (FSS) Dashboard")
 
-tabs = st.tabs(["WR", "RB", "QB", "TE"])
+tabs = st.tabs(["Log In or Sign Up", "WR Rankings", "RB Rankings", "TE Rankings", "QB Rankings", "About Us / Contact Us", "Terms of Use & Privacy Policy", ])
 
 # Map each tab to its raw-CSV filename (must be in the same folder as app.py)
 csv_paths = {
