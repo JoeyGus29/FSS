@@ -26,7 +26,7 @@ for i, pos in enumerate(["WR", "RB", "QB", "TE"]):
         st.markdown("---")
 
         st.subheader("Upload CSV to Batch Score Players")
-        uploaded_file = st.file_uploader("Upload CSV (with feature columns)", type=["csv"])
+        uploaded_file = st.file_uploader("Upload CSV (with feature columns)", type=["csv"], key=f"uploader_{pos}")
 
         if uploaded_file:
             df = pd.read_csv(uploaded_file)
