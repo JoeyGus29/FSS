@@ -19,7 +19,7 @@ for i, pos in enumerate(["WR", "RB", "QB", "TE"]):
     with tabs[i]:
         st.subheader(f"Top FSS Scores – {pos}")
         try:
-            st.image(chart_paths[pos], use_column_width=True)
+            st.image(chart_paths[pos], use_container_width=True)
         except:
             st.warning(f"No chart available for {pos} yet.")
 
