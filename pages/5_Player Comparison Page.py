@@ -1,3 +1,5 @@
+import streamlit as st
+
 st.markdown("---")
        st.subheader("Compare Two Players")
        player1 = st.text_input(f"Player 1 ({pos})", "")
