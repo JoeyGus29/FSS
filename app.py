@@ -1,6 +1,9 @@
 # app.py (Home/Signup/Login)
 
 import streamlit as st
+st.set_page_config(page_title="Home", page_icon="🏠")
+
+# rest of your login/signup or dashboard code...
 
 # Simulated "user database" (for demo purposes only)
 if "users" not in st.session_state:
