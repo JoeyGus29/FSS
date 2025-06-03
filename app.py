@@ -91,12 +91,3 @@ for i, pos in enumerate(["WR Rankings", "RB Rankings", "QB Rankings", "TE Rankin
 
         except FileNotFoundError:
             st.warning(f"Could not find `{csv_file}`. Upload the CSV to this folder and refresh.")
-
-        st.markdown("---")
-        st.subheader("Compare Two Players")
-        player1 = st.text_input(f"Player 1 ({pos})", "")
-        player2 = st.text_input(f"Player 2 ({pos})", "")
-
-        if player1 and player2:
-            st.write(f"Comparison coming soon between **{player1}** and **{player2}**.")
-            st.info("This feature will break down differences by trait grade, film score, and fantasy projection.")
