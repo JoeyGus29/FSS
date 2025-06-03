@@ -45,14 +45,14 @@ def load_and_rescale(csv_file):
 
 for i, pos in enumerate(["WR Rankings", "RB Rankings", "QB Rankings", "TE Rankings"]):
     with tabs[i]:
-        st.subheader(f"Rescaled FSS Rankings – {pos}")
+        st.subheader(f"Rescaled FSS Rankings")
 
         csv_file = csv_paths[pos]
         try:
             df = load_and_rescale(csv_file)
 
             if df.empty:
-                st.info(f"No data yet for {pos}.")
+                st.info(f"No data yet.")
             else:
                 # Sort by Scaled_FSS descending
                 df = df.sort_values("Scaled_FSS", ascending=False).reset_index(drop=True)
@@ -62,7 +62,7 @@ for i, pos in enumerate(["WR Rankings", "RB Rankings", "QB Rankings", "TE Rankin
                 ax.barh(df["Player"], df["Scaled_FSS"], color="steelblue")
                 ax.invert_yaxis()
                 ax.set_xlabel("Rescaled FSS (50–99)")
-                ax.set_title(f"{pos} – First‐Round (Raw  -> Rescaled 50–99)")
+                ax.set_title(f"First‐Round (Raw  -> Rescaled 50–99)")
 
                 # Annotate each bar with its scaled value
                 for bar in ax.patches:
@@ -83,9 +83,9 @@ for i, pos in enumerate(["WR Rankings", "RB Rankings", "QB Rankings", "TE Rankin
                 # Download button for the full rescaled table
                 csv_bytes = df.to_csv(index=False).encode("utf-8")
                 st.download_button(
-                    label=f"Download {pos} FSS (Rescaled 50–99) CSV",
+                    label=f"Download FSS (Rescaled 50–99) CSV",
                     data=csv_bytes,
-                    file_name=f"{pos.lower()}_fss_rescaled.csv",
+                    file_name=f"fss_rescaled.csv",
                     mime="text/csv"
                 )
 
