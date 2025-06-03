@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 
+st.set_page_config(page_icon="🏈")
+
 st.title("Player Comparison")
 st.markdown("---")
 st.subheader("Compare Two Players")
