@@ -36,7 +36,7 @@ GridironIQ is not liable for any loss or damages arising from your use of the Se
 6. Contact
 Questions about these Terms? Contact us at JoeyG@GridironIQ.com
 
-print()
+\n\n
 
 **Privacy Policy**
 
