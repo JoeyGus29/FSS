@@ -20,7 +20,7 @@ GridironIQ is an AI-powered analytics platform that predicts fantasy football su
 - Media and analysts
 
 ### Meet the Team
-Founded by Joey G, GridironIQ combines cutting-edge AI with old-school scouting to give you the smartest prospect grades in the industry.
+Founded by Joey Gustaveson, GridironIQ combines cutting-edge AI with old-school scouting to give you the smartest prospect grades in the industry.
 
 **Contact:** JoeyG@GridironIQ.com
 """)
