@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+st.set_page_config(page_icon="🏈")
+
 st.title("Rescaled FSS Rankings – WR Rankings")
 
 csv_file = "wr_fss_rankings.csv"
