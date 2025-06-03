@@ -1,4 +1,4 @@
-# home.py
+# app.py (Home/Signup/Login)
 
 import streamlit as st
 
