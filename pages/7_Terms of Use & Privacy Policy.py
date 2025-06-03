@@ -34,8 +34,9 @@ The Service is provided “as is.” We do not guarantee accuracy or fitness for
 GridironIQ is not liable for any loss or damages arising from your use of the Service.
 
 6. Contact
-Questions about these Terms? Contact us at JoeyG@GridironIQ.com.**.
+Questions about these Terms? Contact us at JoeyG@GridironIQ.com
 
+print()
 
 **Privacy Policy**
 
@@ -69,5 +70,5 @@ GridironIQ is not directed at children under 13.
 We may update this policy; significant changes will be communicated via the site.
 
 8. Contact
-Questions about this policy? Contact us at JoeyG@GridironIQ.com**.
+Questions about this policy? Contact us at JoeyG@GridironIQ.com.
 """)
